@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #9EBCC8;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .container{
+            padding: 10px;
+            display: grid;
+            grid-template-rows: 1fr 2fr 1fr;
+        }
+        .header{
+            background-color: #03998F;
+            padding: 10px;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+        }
+        .footer{
+             background-color: #03998F;
+             padding: 10px;
+             color: #fff;
+             justify-content: center;
+            align-items: center;
+            display: grid;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            height: 300px;
+            gap: 10px;
+            color: #fff;
+            margin: 10px 0;
+        }
+        .aside-one{
+            background-color: #59AE58;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .aside-two{
+            background-color: #CA8D3E;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+        }
+        .image-sec{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .imge1{
+            width: 300px;
+            height: 100px;
+            background-color: #CBA83C;
+            color: #fff;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .article{
+            justify-content: center;
+            align-items: end;
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="main">
+            <div class="aside-one">Aside</div>
+            <div class="aside-two">
+                     <div class="article">Article</div>
+                     <div class="image-sec">
+                    <div class="imge1">Image</div>
+                    <div class="imge1">Image</div>
+                    <div class="imge1">Image</div>
+                    </div>
+            </div>
+            
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
