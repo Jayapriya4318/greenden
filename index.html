@@ -7,9 +7,7 @@
     <link href="
     https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     " rel="stylesheet">
-    <link href="
-    https://cdn.jsdelivr.net/npm/tailwindcss@3.3.5/lib/css/preflight.min.css
-    " rel="stylesheet">
+    
 </head>
 <body>
     <!-- responsive nav -->
@@ -21,10 +19,21 @@
             <li><a href="contact.html" class="hover:underline hover:text-black">Contact</a></li>
         </ul>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+            class="w-6 h-6 md:hidden" id="menu">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
     </nav>
+    <!-- side nave -->
+    <section id="sidenav" class="bg-green-100 z-20 top-0 fixed right-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5 cursor-pointer" id="close-nav">
+            <p>X</p>
+        </div>
+        <ul class="flex flex-col gap-5 text-center text-gray-600">
+            <li><a href="index.html" class="hover:underline hover:text-black">Home</a></li>
+            <li><a href="product.html" class="hover:underline hover:text-black">Products</a></li>
+            <li><a href="contact.html" class="hover:underline hover:text-black">Contact</a></li>
+        </ul>
+    </section>
     <!-- header-sec -->
     <section class="bg-green-100 p-4 flex justify-center">
         <div>
@@ -139,5 +148,6 @@
     <script src="
     https://cdn.jsdelivr.net/npm/tailwindcss@3.3.5/lib/index.min.js
     "></script>
+    <script src="script.js"></script>
 </body>
 </html>
